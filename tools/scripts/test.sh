@@ -1,6 +1,11 @@
 #!bin/bash
 
-if [ ! -d "./scripts" ]
+if [ -d "../scripts" ]
+then
+    cd ..
+fi
+
+if [ -d "../tools" ]
 then
     cd ..
 fi
