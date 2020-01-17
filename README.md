@@ -1,5 +1,5 @@
-# CPPTravisGTestTemplate
+# SharedPointerTest
 
-[![Build Status](https://travis-ci.com/CameronPodd/CPPTravisGTestTemplate.svg?token=XjT7oJU5EtYgVZsdH52D&branch=master)](https://travis-ci.com/CameronPodd/CPPTravisGTestTemplate)
+[![Build Status](https://travis-ci.com/CameronPodd/SharedPointerTest.svg?token=XjT7oJU5EtYgVZsdH52D&branch=master)](https://travis-ci.com/CameronPodd/SharedPointerTest)
 
-This Repository is a template for a project working in C++ with Google Testing and Travis CI integration.  
+A repository to sample and test C++11's smart pointer features.
