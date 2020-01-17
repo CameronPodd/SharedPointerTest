@@ -16,7 +16,7 @@ install:
   - sudo apt-get install -y libc++-dev libc++abi-dev
 
 script: 
-- sh ./scripts/test.sh
+- sh ./tools/scripts/test.sh
 
 notifications:
     email: false
