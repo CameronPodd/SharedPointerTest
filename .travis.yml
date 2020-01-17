@@ -1,4 +1,19 @@
 language: cpp
+compiler: clang
+
+env: COMPILER_NAME=clang CXX=clang++-3.8 CC=clang-3.8
+addons:
+  apt:
+    packages:
+      - clang-3.8
+    sources: *sources
+
+install: 
+  # clang
+  - sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 90
+  - sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-3.8 90
+  # clang STL
+  - sudo apt-get install -y libc++-dev libc++abi-dev
 
 script: 
 - sh ./scripts/test.sh
