@@ -15,7 +15,16 @@ then
     mkdir build
 fi
 cd build
-cmake ..
+cmake .. -DCMAKE_BUILD_TYPE=Debug
 cmake --build .
 
-ctest -VV
+
+if (($# >= 2))
+then
+    if (($1 == "-d"))
+    then
+        lldb ./TESTS/$2_test
+    fi
+else
+    ctest -VV
+fi
