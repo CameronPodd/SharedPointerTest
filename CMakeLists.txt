@@ -17,6 +17,12 @@ ExternalProject_Add(googletest
     CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${EXTERNAL_INSTALL_LOCATION}
 )
 
+ExternalProject_Add(pistache
+    GIT_REPOSITORY https://github.com/oktal/pistache.git
+    CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${EXTERNAL_INSTALL_LOCATION}
+    -DCMAKE_BUILD_TYPE=Release
+)
+
 include_directories(${EXTERNAL_INSTALL_LOCATION}/include)
 link_directories(${EXTERNAL_INSTALL_LOCATION}/lib)
 
